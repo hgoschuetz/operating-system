@@ -1,10 +1,11 @@
-#include "keyboard.h"
+#include "drivers/keyboard.h"
+#include "drivers/io.h"
 #include "vga.h"
+#include "types.h"
 
 void test()
 {
-    print_string("Hello, World!\n");
-    print_string("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    print_string("Hello, World!");
 }
 
 void kernel_startup()

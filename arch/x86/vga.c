@@ -1,5 +1,4 @@
 #include "vga.h"
-
 #include "types.h"
 
 uint16_t *vga_buffer;
