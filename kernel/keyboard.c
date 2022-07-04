@@ -1,7 +1,7 @@
 #include "keyboard.h"
 #include "types.h"
 
-char get_ascii_char(uint8_t keycode)
+extern char get_ascii_char(uint8_t keycode)
 {
     switch (keycode)
     {

@@ -1,11 +1,9 @@
 #ifndef KERNEL_H
 #define KERNEL_H
 
-#define NULL 0
+#include "types.h"
 
-typedef unsigned char uint8_t;
-typedef unsigned short uint16_t;
-typedef unsigned int uint32_t;
+#define NULL 0
 
 #define VGA_ADDRESS 0xB8000
 #define BUFSIZE 2200
@@ -34,6 +32,11 @@ enum vga_color
     YELLOW,
     WHITE,
 };
+
+uint8_t byte_in(uint16_t port);
+void byte_out(uint16_t port, uint8_t data);
+char get_input_keycode();
+void sleep(uint32_t timer_count);
 
 void printc(unsigned char c, uint8_t fg_color, uint8_t bg_color);
 void print(unsigned char *s, uint8_t fg_color, uint8_t bg_color);
