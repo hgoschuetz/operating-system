@@ -2,7 +2,7 @@
 
 A tiny operating system that can do (almost) nothing.  
 
-## Note (to me)
+## Note (to myself)
 
 Build environment:  
 
