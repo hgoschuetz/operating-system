@@ -1,4 +1,4 @@
-# birbOS
+# Operating system (myos)
 
 A tiny operating system that can do (almost) nothing.  
 
